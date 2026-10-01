@@ -1,0 +1,918 @@
+
+/* =====================================================
+   MOODDESK - APP.CSS
+   Clean • Professional • Responsive
+===================================================== */
+
+* {
+  box-sizing: border-box;
+}
+
+.dashboard {
+  width: 100%;
+  min-height: 100vh;
+  padding: 40px 5%;
+  background: #f5f7fb;
+  color: #20232a;
+  transition: all 0.4s ease;
+}
+
+
+/* =====================================================
+   COMMON WIDTH
+===================================================== */
+
+.dashboard > * {
+  width: 100%;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+.welcome-section {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 30px;
+}
+
+.greeting {
+  margin: 0 0 8px;
+  color: #777d87;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.welcome-section h1 {
+  margin: 0;
+  color: #17191f;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+.welcome-section h1 span {
+  color: #6c63ff;
+}
+
+.subtitle {
+  margin: 10px 0 0;
+  color: #777d87;
+  font-size: 16px;
+}
+
+
+/* =====================================================
+   DATE CARD
+===================================================== */
+
+.date-card {
+  min-width: 200px;
+  padding: 18px 22px;
+  background: #ffffff;
+  border: 1px solid #e8eaf0;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+}
+
+.date-card p {
+  margin: 0 0 5px;
+  color: #999da6;
+  font-size: 12px;
+}
+
+.date-card h2 {
+  margin: 0 0 5px;
+  color: #252832;
+  font-size: 20px;
+}
+
+.date-card span {
+  color: #858a94;
+  font-size: 13px;
+}
+
+
+/* =====================================================
+   DARK MODE BUTTON
+===================================================== */
+
+.theme-button {
+  padding: 13px 18px;
+  border: none;
+  border-radius: 14px;
+  background: #22242a;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: 0.25s ease;
+}
+
+.theme-button:hover {
+  transform: translateY(-2px);
+}
+
+
+/* =====================================================
+   COMMON CARDS
+===================================================== */
+
+.mood-section,
+.thought-card,
+.goal-card,
+.habit-card,
+.mood-history-card,
+.inspiration-card {
+  background: #ffffff;
+  border: 1px solid #e8eaf0;
+  border-radius: 24px;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.05);
+}
+
+
+/* =====================================================
+   MOOD SECTION
+===================================================== */
+
+.mood-section {
+  padding: 30px;
+  margin-bottom: 25px;
+}
+
+.section-heading {
+  margin-bottom: 22px;
+}
+
+.section-heading p {
+  margin: 0 0 7px;
+  color: #6c63ff;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.7px;
+}
+
+.section-heading span {
+  color: #777d87;
+  font-size: 14px;
+}
+
+
+/* =====================================================
+   MOOD BUTTONS
+===================================================== */
+
+.mood-list {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 15px;
+}
+
+.mood-card {
+  min-height: 125px;
+  padding: 15px;
+
+  border: 1px solid #e4e7ed;
+  border-radius: 18px;
+
+  background: #fafbfc;
+  color: #242730;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 9px;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease,
+    background 0.25s ease;
+}
+
+.mood-card:hover {
+  transform: translateY(-4px);
+  border-color: #6c63ff;
+  box-shadow: 0 10px 25px rgba(108, 99, 255, 0.12);
+}
+
+.mood-card.selected {
+  border: 2px solid #6c63ff;
+  background: #f2f0ff;
+}
+
+.mood-emoji {
+  font-size: 34px;
+}
+
+.mood-name {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.selected-message {
+  margin: 18px 0 0;
+  text-align: center;
+  color: #626873;
+  font-size: 14px;
+}
+
+
+/* =====================================================
+   THOUGHT + GOAL
+===================================================== */
+
+.thought-card,
+.goal-card {
+  width: calc(50% - 13px);
+  min-height: 260px;
+  padding: 28px;
+
+  display: inline-block;
+  vertical-align: top;
+
+  margin-bottom: 25px;
+}
+
+.thought-card {
+  margin-right: 20px;
+}
+
+
+/* =====================================================
+   CARD HEADING
+===================================================== */
+
+.card-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.card-heading > div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.card-heading h2 {
+  margin: 0;
+  color: #252832;
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.card-icon {
+  font-size: 23px;
+}
+
+.character-count,
+.goal-label,
+.habit-progress-text,
+.history-label {
+  color: #9297a1;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+
+/* =====================================================
+   THOUGHT
+===================================================== */
+
+.thought-card textarea {
+  width: 100%;
+  height: 125px;
+
+  padding: 15px;
+
+  border: 1px solid #e1e4ea;
+  border-radius: 15px;
+
+  outline: none;
+  resize: none;
+
+  background: #fafbfc;
+  color: #242730;
+
+  font-size: 14px;
+  line-height: 1.5;
+
+  transition: 0.25s ease;
+}
+
+.thought-card textarea:focus {
+  border-color: #6c63ff;
+  box-shadow: 0 0 0 3px rgba(108, 99, 255, 0.08);
+}
+
+.thought-card textarea::placeholder {
+  color: #a0a5ae;
+}
+
+.thought-hint {
+  margin: 11px 0 0;
+  color: #969ba5;
+  font-size: 12px;
+}
+
+
+/* =====================================================
+   GOAL
+===================================================== */
+
+.goal-input-area {
+  display: flex;
+  gap: 10px;
+}
+
+.goal-input-area input {
+  flex: 1;
+  min-width: 0;
+
+  padding: 14px 15px;
+
+  border: 1px solid #e1e4ea;
+  border-radius: 14px;
+
+  outline: none;
+
+  background: #fafbfc;
+  color: #242730;
+
+  font-size: 14px;
+}
+
+.goal-input-area input:focus {
+  border-color: #6c63ff;
+  box-shadow: 0 0 0 3px rgba(108, 99, 255, 0.08);
+}
+
+.goal-input-area button {
+  padding: 0 20px;
+
+  border: none;
+  border-radius: 14px;
+
+  background: #6c63ff;
+  color: #ffffff;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.goal-input-area button:hover {
+  transform: translateY(-2px);
+}
+
+.saved-goal {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+
+  padding: 18px;
+
+  border-radius: 16px;
+
+  background: #f8f8ff;
+}
+
+.goal-check {
+  width: 32px;
+  height: 32px;
+
+  flex-shrink: 0;
+
+  border: 2px solid #d5d8df;
+  border-radius: 9px;
+
+  background: #ffffff;
+  color: #6c63ff;
+
+  cursor: pointer;
+}
+
+.saved-goal-content p {
+  margin: 0;
+  color: #292c35;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.saved-goal-content span {
+  display: block;
+  margin-top: 5px;
+  color: #6c63ff;
+  font-size: 12px;
+}
+
+.saved-goal.completed p {
+  text-decoration: line-through;
+  opacity: 0.55;
+}
+
+
+/* =====================================================
+   HABITS
+===================================================== */
+
+.habit-card {
+  width: calc(50% - 13px);
+  min-height: 300px;
+  padding: 28px;
+
+  display: inline-block;
+  vertical-align: top;
+
+  margin-right: 20px;
+  margin-bottom: 25px;
+}
+
+.progress-container {
+  width: 100%;
+  height: 7px;
+
+  margin-bottom: 22px;
+
+  border-radius: 10px;
+
+  background: #eceef3;
+
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  border-radius: 10px;
+
+  background: #6c63ff;
+
+  transition: width 0.3s ease;
+}
+
+.habit-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.habit-item {
+  padding: 15px;
+
+  border: 1px solid #e4e7ed;
+  border-radius: 15px;
+
+  background: #fafbfc;
+  color: #242730;
+
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+
+  cursor: pointer;
+
+  transition: 0.25s ease;
+}
+
+.habit-item:hover {
+  transform: translateY(-2px);
+  border-color: #6c63ff;
+}
+
+.habit-item.completed {
+  border-color: #6c63ff;
+  background: #f2f0ff;
+}
+
+.habit-icon {
+  font-size: 20px;
+}
+
+.habit-name {
+  flex: 1;
+  text-align: left;
+
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.habit-check {
+  width: 22px;
+  height: 22px;
+
+  border: 1px solid #d5d8df;
+  border-radius: 7px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 13px;
+}
+
+
+/* =====================================================
+   MOOD HISTORY
+===================================================== */
+
+.mood-history-card {
+  width: 100%;
+  padding: 28px;
+  margin-bottom: 25px;
+}
+
+.mood-history-list {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 12px;
+}
+
+.history-item {
+  padding: 17px 10px;
+
+  border-radius: 16px;
+
+  background: #f8f9fb;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 7px;
+}
+
+.history-day {
+  color: #9297a1;
+  font-size: 12px;
+}
+
+.history-emoji {
+  font-size: 28px;
+}
+
+.history-mood {
+  color: #30333b;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+
+/* =====================================================
+   INSPIRATION
+===================================================== */
+
+.inspiration-card {
+  width: 100%;
+  min-height: 150px;
+
+  padding: 30px;
+  margin-bottom: 30px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 20px;
+}
+
+.inspiration-icon {
+  width: 62px;
+  height: 62px;
+
+  flex-shrink: 0;
+
+  border-radius: 19px;
+
+  background: #f2f0ff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 29px;
+}
+
+.inspiration-content {
+  flex: 1;
+}
+
+.inspiration-label {
+  margin: 0 0 8px;
+
+  color: #6c63ff;
+
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.7px;
+}
+
+.inspiration-text {
+  margin: 0 0 13px;
+
+  color: #292c35;
+
+  font-size: 18px;
+  font-weight: 500;
+
+  line-height: 1.5;
+}
+
+.new-inspiration-button {
+  padding: 9px 14px;
+
+  border: none;
+  border-radius: 11px;
+
+  background: #f0f1f5;
+  color: #343740;
+
+  font-size: 13px;
+
+  cursor: pointer;
+}
+
+
+/* =====================================================
+   MOOD BACKGROUNDS
+===================================================== */
+
+.dashboard.mood-happy {
+  background: #fff8e7;
+}
+
+.dashboard.mood-calm {
+  background: #eef7ff;
+}
+
+.dashboard.mood-tired {
+  background: #f3effa;
+}
+
+.dashboard.mood-stressed {
+  background: #fff0f0;
+}
+
+.dashboard.mood-excited {
+  background: #fff9df;
+}
+
+
+/* =====================================================
+   DARK MODE
+===================================================== */
+
+.dashboard.dark-mode {
+  background: #111318;
+  color: #f5f5f5;
+}
+
+.dashboard.dark-mode .welcome-section h1 {
+  color: #ffffff;
+}
+
+.dashboard.dark-mode .greeting,
+.dashboard.dark-mode .subtitle {
+  color: #a7acb7;
+}
+
+.dashboard.dark-mode .date-card,
+.dashboard.dark-mode .mood-section,
+.dashboard.dark-mode .thought-card,
+.dashboard.dark-mode .goal-card,
+.dashboard.dark-mode .habit-card,
+.dashboard.dark-mode .mood-history-card,
+.dashboard.dark-mode .inspiration-card {
+  background: #1c1f26;
+  border-color: #292d36;
+}
+
+.dashboard.dark-mode .date-card h2,
+.dashboard.dark-mode .card-heading h2,
+.dashboard.dark-mode .saved-goal-content p,
+.dashboard.dark-mode .inspiration-text {
+  color: #ffffff;
+}
+
+.dashboard.dark-mode .mood-card,
+.dashboard.dark-mode .habit-item,
+.dashboard.dark-mode .history-item {
+  background: #252932;
+  border-color: #353943;
+  color: #ffffff;
+}
+
+.dashboard.dark-mode .mood-card.selected,
+.dashboard.dark-mode .habit-item.completed {
+  background: #303442;
+  border-color: #8b83ff;
+}
+
+.dashboard.dark-mode .thought-card textarea,
+.dashboard.dark-mode .goal-input-area input {
+  background: #252932;
+  border-color: #383c46;
+  color: #ffffff;
+}
+
+.dashboard.dark-mode .saved-goal {
+  background: #252932;
+}
+
+.dashboard.dark-mode .goal-check {
+  background: #252932;
+  border-color: #555a65;
+  color: #ffffff;
+}
+
+.dashboard.dark-mode .inspiration-icon {
+  background: #303442;
+}
+
+.dashboard.dark-mode .new-inspiration-button {
+  background: #30343d;
+  color: #ffffff;
+}
+
+.dashboard.dark-mode .progress-container {
+  background: #363a43;
+}
+
+.dashboard.dark-mode .theme-button {
+  background: #ffffff;
+  color: #202229;
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 1050px) {
+  .dashboard {
+    padding: 30px 4%;
+  }
+
+  .welcome-section {
+    grid-template-columns: 1fr auto;
+  }
+
+  .date-card {
+    grid-column: 1 / -1;
+    width: 100%;
+  }
+
+  .mood-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .thought-card,
+  .goal-card,
+  .habit-card {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 650px) {
+  .dashboard {
+    padding: 20px 14px;
+  }
+
+  .welcome-section {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 15px;
+  }
+
+  .welcome-section h1 {
+    font-size: 30px;
+  }
+
+  .subtitle {
+    font-size: 14px;
+  }
+
+  .date-card {
+    width: 100%;
+  }
+
+  .theme-button {
+    width: fit-content;
+  }
+
+  .mood-section,
+  .thought-card,
+  .goal-card,
+  .habit-card,
+  .mood-history-card,
+  .inspiration-card {
+    padding: 20px;
+    border-radius: 20px;
+  }
+
+  .mood-list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .mood-card {
+    min-height: 105px;
+  }
+
+  .mood-emoji {
+    font-size: 30px;
+  }
+
+  .thought-card,
+  .goal-card,
+  .habit-card {
+    min-height: auto;
+  }
+
+  .goal-input-area {
+    flex-direction: column;
+  }
+
+  .goal-input-area button {
+    min-height: 48px;
+  }
+
+  .habit-list {
+    grid-template-columns: 1fr;
+  }
+
+  .mood-history-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .inspiration-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .inspiration-text {
+    font-size: 16px;
+  }
+}
+
+
+/* =====================================================
+   ANIMATION
+===================================================== */
+
+.mood-section,
+.thought-card,
+.goal-card,
+.habit-card,
+.mood-history-card,
+.inspiration-card {
+  animation: fadeUp 0.5s ease both;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* =====================================================
+   BUTTON TOUCH EFFECT
+===================================================== */
+
+button {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
