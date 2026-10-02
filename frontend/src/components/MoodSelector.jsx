@@ -22,7 +22,7 @@ function MoodSelector({ onMoodChange }) {
 
     try {
       // Send mood to backend
-      const response = await fetch("http://localhost:5000/api/moods", {
+      const response = await fetch("https://mooddesk-backend.onrender.com/api/moods", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
