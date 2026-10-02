@@ -6,6 +6,7 @@ import GoalCard from "../components/GoalCard";
 import HabitCard from "../components/HabitCard";
 import MoodHistory from "../components/MoodHistory";
 import InspirationCard from "../components/InspirationCard";
+import QRCodeCard from "../components/QRCodeCard";
 
 function Dashboard() {
   const [darkMode, setDarkMode] = useState(false);
@@ -61,6 +62,7 @@ function Dashboard() {
       <GoalCard />
       <HabitCard />
       <MoodHistory />
+      <QRCodeCard />
       <InspirationCard />
     </main>
   );
